@@ -9,7 +9,6 @@ public class Main {
         double numberTwo = 15.2;
 
         System.out.println("My name is" + name + ". My age is " + age + " years old.");
-
         System.out.println("The sum of two numbers = " + numberOne + numberTwo);
     }
 }
