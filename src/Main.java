@@ -23,14 +23,18 @@ public class Main {
             System.out.print(" подросток.");
         } else if (ageUser >= 18 && ageUser < 60) {
             System.out.println(" взрослый.");
-        } else if (ageUser >= 60 && ageUser < 125){
+        } else if (ageUser >= 60 && ageUser < 125) {
             System.out.println(" пожилой.");
         } else System.out.println(" не существуешь!");
 
         System.out.println("Введите пароль: ");
         String password = scanner.nextLine();
-        if (password.equals("admin123")) {
-            System.out.println("Доступ разрешен!");
-        } else System.out.println("Ошибка доступа!");
+
+        for (int i = 0; i < 3; i++) {
+            if (password.equals("admin123")) {
+                System.out.println("Доступ разрешен!");
+            } else System.out.println("Ошибка доступа!");
+        }
+        System.out.println("Доступ запрещен!");
     }
 }
